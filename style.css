@@ -221,4 +221,64 @@ a {
         transform: scale(1.2);
         opacity: 0;
     }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+@keyframes slide {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 40px 0;
+    }
+}
+
+.shadow-img1 {
+    background-image: url("../img/shadow.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.shadow-img2 {
+    background-position: bottom;
+    background-image: url("../img/shadow2.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.slider-nav-item:after {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    height: 2px;
+    content: "";
+    width: 100%;
+    background: url(https://1.bp.blogspot.com/--Btu5p654jU/XYmrVd5IcYI/AAAAAAAATQ0/4bX8aZyFBgApbJUf90KrpCfO6RvAaZ6LgCLcBGAsYHQ/s1600/line.png)
+        repeat 0 0;
+    z-index: 0;
+    animation: slide 1s linear infinite;
+}
+.mt100 {
+    margin-top: 100px;
+}
+
+.jello-horizontal {
+    -webkit-animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
+}
+
+.social-bar a:hover i {
+    -webkit-animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
+}
+
+@media only screen and (max-width: 300px) {
+    .process-scetion .slider-nav-item {
+        height: 30px;
+        width: 30px;
+        margin: 15px 10px;
+        line-height: 28px;
+    }
 }
